@@ -22,8 +22,14 @@ export default function createStack() {
     return [result, result.pop()];
   };
 
+  const isEmpty = (stack) => {
+    stackCheck(stack);
+    return stack.length === 0;
+  };
+
   return {
     push,
     pop,
+    isEmpty,
   };
 }
