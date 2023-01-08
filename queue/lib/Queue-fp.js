@@ -3,7 +3,7 @@ const isQueue = (queue, fn) => {
     return fn;
   }
 
-  throw new Error("Stack 형식이 올바르지 않습니다");
+  throw new Error("Queue 형식이 올바르지 않습니다");
 };
 
 const enqueue = (queue) =>
