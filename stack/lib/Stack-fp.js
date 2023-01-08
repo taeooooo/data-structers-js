@@ -1,35 +1,27 @@
-export default function createStack() {
-  const isStack = (stack) => {
-    return stack instanceof Array;
-  };
+const isStack = (stack, fn) => {
+  if (stack instanceof Array) {
+    return fn;
+  }
 
-  const stackCheck = (stack) => {
-    if (!isStack(stack)) {
-      throw new Error("Stack 형식이 올바르지 않습니다");
-    }
-  };
+  throw new Error("Stack 형식이 올바르지 않습니다");
+};
 
-  const push = (stack) => (d) => {
-    stackCheck(stack);
+const push = (stack) =>
+  isStack(stack, (d) => {
     const result = [...stack];
     result.push(d);
     return result;
-  };
+  });
 
-  const pop = (stack) => {
-    stackCheck(stack);
+const pop = (stack) =>
+  isStack(stack, () => {
     const result = [...stack];
     return [result, result.pop()];
-  };
+  });
 
-  const isEmpty = (stack) => {
-    stackCheck(stack);
+const isEmpty = (stack) =>
+  isStack(stack, () => {
     return stack.length === 0;
-  };
+  });
 
-  return {
-    push,
-    pop,
-    isEmpty,
-  };
-}
+export { push, pop, isEmpty };

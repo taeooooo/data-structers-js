@@ -1,16 +1,14 @@
-import createStack from "./lib/Stack-fp.js";
+import * as Stack from "./lib/Stack-fp.js";
 
 function isPalindrome(word) {
-  const stack = new createStack();
-
   let wordStack;
   wordStack = word.split("").reduce((acc, cur) => {
-    return stack.push(acc)(cur);
+    return Stack.push(acc)(cur);
   }, []);
 
   let rWord = "";
-  while (!stack.isEmpty(wordStack)) {
-    const [newStack, data] = stack.pop(wordStack);
+  while (!Stack.isEmpty(wordStack)()) {
+    const [newStack, data] = Stack.pop(wordStack)();
     wordStack = newStack;
     rWord += data;
   }
