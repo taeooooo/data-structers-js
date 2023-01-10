@@ -24,10 +24,16 @@
     - 라이브러리 : /queue/lib/Queue-fp.js
     - 기본예제: /queue/fp-example1.js
     - 기수정렬 구현 : /queue/fp-example2.js
+- 리스트
+  - 객체형 리스트
+    - 라이브러리 : /list/lib/List.js
+    - 기본예제: /list/example1.js
+  - 함수형 리스트
+    - 라이브러리 : /list/lib/List-fp.js
+    - 기본예제: /list/example1.js
 
 ## TODO
 
-- 리스트
 - 연결리스트
 - 딕셔너리
 - 해싱
