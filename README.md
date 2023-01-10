@@ -25,7 +25,7 @@
   - 함수형 큐
     - 라이브러리 : /queue/lib/Queue-fp.js
     - 기본예제: /queue/fp-example1.js
-    - 기수정렬 구현 : /queue/p-example2.js
+    - 기수정렬 구현 : /queue/fp-example2.js
 
 ## TODO
 
