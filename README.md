@@ -9,7 +9,23 @@
 ## 완료된 작업
 
 - 스택
+  - 객체형 스택
+    - 라이브러리 : /stack/lib/Stack.js
+    - 기본예제: /stack/example1.js
+    - 회문구현 : /stack/example2.js
+  - 함수형 스택
+    - 라이브러리 : /stack/lib/Stack-fp.js
+    - 기본예제: /stack/fp-example1.js
+    - 회문구현 : /stack/fp-example2.js
 - 큐
+  - 객체형 큐
+    - 라이브러리 : /queue/lib/Queue.js
+    - 기본예제: /queue/example1.js
+    - 기수정렬 구현 : /queue/example2.js
+  - 함수형 큐
+    - 라이브러리 : /queue/lib/Queue-fp.js
+    - 기본예제: /queue/fp-example1.js
+    - 기수정렬 구현 : /queue/p-example2.js
 
 ## TODO
 
